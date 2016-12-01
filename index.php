@@ -25,6 +25,7 @@
         <div class="nav-wrapper #00897b teal darken-1">
             <a href="#" class="brand-logo">Unipesa</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a><i class="material-icons">shopping_cart</i></a></li>
                 <li><a href="sass.html">Inicio</a></li>
                 <li><a href="badges.html">Nosotros</a></li>
                 <li><a href="collapsible.html">Productos</a></li>
@@ -61,7 +62,7 @@
         </div>
 
     </section>
-    <section>
+    <section style="padding-top: 50px; padding-bottom: 50px;">
         <div class="row">
             <div class="col s4">
                 <div class="card small">
@@ -69,8 +70,8 @@
                         <img class="activator" src="images/office.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
+                        <span class="card-title activator grey-text text-darken-4">Bota Welt con elastometro<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Ir al producto</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -85,8 +86,8 @@
                         <img class="activator" src="images/office.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
+                        <span class="card-title activator grey-text text-darken-4">Unisex Coverall<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Ir al producto</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -101,8 +102,8 @@
                         <img class="activator" src="images/office.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
+                        <span class="card-title activator grey-text text-darken-4">Rollo cable 7MM<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">Ir al producto</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -112,8 +113,8 @@
             </div>
 
         </div>
-    </section>
-    <section>
+    </section >
+    <section class="#bdbdbd grey lighten-1" style="padding-bottom: 50px; padding-top: 50px;">
         <div class="row">
             <h3 class="center">Pedidos</h3>
             <div class="col s6  center">
@@ -132,6 +133,45 @@
 
         </div>
 
+    </section>
+
+    <section >
+        <div class="row ">
+            <form class="col s6 offset-s3 ">
+                <div class="row">
+                    <h3 class="center" style="padding-bottom: 15px;">Contactanos</h3>
+                    <div class="input-field col s6 ">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="input-field col s6 ">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Apellido</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 ">
+                        <input  id="disabled" type="text" class="validate">
+                        <label >Asunto</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 ">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Correo electrónico</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 ">
+                        <textarea id="textarea1" class="materialize-textarea" length="500"></textarea>
+                        <label for="textarea1">Inserte el mensaje</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
     </section>
 
     <footer class="page-footer #000000 black">
@@ -167,10 +207,20 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>  $(".button-collapse").sideNav();</script>
-    <script>    $(document).ready(function(){
+    <script>    $(document).ready(function( ){
             $('.parallax').parallax();
         });
     </script>
-    <script> $('.carousel.carousel-slider').carousel({full_width: true});</script>
+    <script> $('.carousel.carousel-slider').carousel({full_width: true, time_constant: 400 } );</script>
+    <script>
+        // Next slide
+        $('.carousel').carousel('next');
+        $('.carousel').carousel('next', 3); // Move next n times.
+        // Previous slide
+        $('.carousel').carousel('prev');
+        $('.carousel').carousel('prev', 4); // Move prev n times.
+        // Set to nth slide
+        $('.carousel').carousel('set', 4);
+    </script>
     </body>
   </html>
